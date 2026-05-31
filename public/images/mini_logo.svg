@@ -1,0 +1,38 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F8CFF"></stop>
+      <stop offset="100%" stop-color="#0047FF"></stop>
+    </linearGradient>
+
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.15"></feDropShadow>
+    </filter>
+  </defs>
+
+  <g transform="translate(10,10)" filter="url(#shadow)">
+    <!-- Graduation Cap -->
+    <polygon points="90,0 180,35 90,70 0,35" fill="#0A2540"></polygon>
+
+    <line x1="180" y1="35" x2="180" y2="80" stroke="#0A2540" stroke-width="5"></line>
+
+    <circle cx="180" cy="85" r="7" fill="#1E66FF"></circle>
+
+    <!-- Stylized A -->
+    <path d="M25 180
+             L90 50
+             L155 180
+             L125 180
+             L107 145
+             L73 145
+             L55 180 Z" fill="url(#grad)"></path>
+
+    <!-- Cross Bar -->
+    <rect x="68" y="115" width="44" height="14" rx="7" fill="white"></rect>
+
+    <!-- Check Mark -->
+    <path d="M130 135
+             L145 150
+             L175 115" fill="none" stroke="#00C16A" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"></path>
+  </g>
+</svg>

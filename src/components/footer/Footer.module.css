@@ -1,0 +1,59 @@
+.hero {
+    background-color: whitesmoke;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    margin-right: 20rem;
+}
+
+.description {
+    display: flex;
+}
+
+.image {
+    width: 15rem;
+    height: auto;
+}
+
+.text {
+    margin-left: 1rem;
+    width: 25rem;
+    text-align: center;
+    line-height: 1.5rem;
+    display: flex;
+    align-items: center;
+    font-weight: 200;
+    flex-direction: column;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.button {
+    font-size: 1rem;
+    font-weight: 200;
+    cursor: pointer;
+    line-height: 1rem;
+}
+
+.icons {
+    display: flex;
+    gap: 2rem;
+}
+
+.icon {
+    font-size: 2rem;
+    cursor: pointer;
+    color: black;
+}
+
+.copyright {
+    padding-top: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
