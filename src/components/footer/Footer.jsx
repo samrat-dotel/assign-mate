@@ -19,12 +19,8 @@ const Footer = () => {
     navigate("/about");
   };
 
-  const gotoLogin = () => {
-    navigate("/login");
-  };
-
-  const gotoRegister = () => {
-    navigate("signup");
+  const gotoContact = () => {
+    navigate("/contact");
   };
 
   return (
@@ -61,11 +57,8 @@ const Footer = () => {
             <p className={styles.button} onClick={gotoAbout}>
               About
             </p>
-            <p className={styles.button} onClick={gotoLogin}>
+            <p className={styles.button} onClick={gotoContact}>
               Contact Us
-            </p>
-            <p className={styles.button} onClick={gotoRegister}>
-              Login
             </p>
           </buttons>
         </div>

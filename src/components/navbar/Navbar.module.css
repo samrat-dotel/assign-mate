@@ -10,6 +10,7 @@
 .image {
     width: 25rem;
     height: auto;
+    cursor: pointer;
 }
 
 .buttons {
