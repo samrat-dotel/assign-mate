@@ -5,23 +5,16 @@ import { useNavigate } from "react-router-dom";
 const Navbar = () => {
   const navigate = useNavigate();
 
-  const gotoHome = () => {
-    navigate("/");
-  };
+  const gotoHome = () => navigate("/");
 
-  const gotoAbout = () => {
-    navigate("/about");
-  };
-  const gotoContact = () => {
-    navigate("/contact");
-  };
-  const gotoLogin = () => {
-    navigate("/login");
-  };
+  const gotoAbout = () => navigate("/about");
 
-  const gotoSignup = () => {
-    navigate("/signup");
-  };
+  const gotoContact = () => navigate("/contact");
+
+  const gotoLogin = () => navigate("/login");
+
+  const gotoSignup = () => navigate("/signup");
+
   return (
     <main className={styles.main}>
       <img

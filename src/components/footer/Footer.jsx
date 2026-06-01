@@ -11,17 +11,11 @@ import { AiFillTikTok } from "react-icons/ai";
 const Footer = () => {
   const navigate = useNavigate();
 
-  const gotoHome = () => {
-    navigate("/");
-  };
+  const gotoHome = () => navigate("/");
 
-  const gotoAbout = () => {
-    navigate("/about");
-  };
+  const gotoAbout = () => navigate("/about");
 
-  const gotoContact = () => {
-    navigate("/contact");
-  };
+  const gotoContact = () => navigate("/contact");
 
   return (
     <main className={styles.hero}>
