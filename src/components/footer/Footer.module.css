@@ -1,6 +1,5 @@
 .hero {
     background-color: whitesmoke;
-    width: 100%;
 }
 
 .main {
@@ -32,6 +31,7 @@
 .container {
     width: 100%;
     display: flex;
+    gap: 4rem;
     justify-content: space-evenly;
 }
 
@@ -50,7 +50,6 @@
 .icons {
     display: flex;
     flex-wrap: wrap;
-    max-width: 70%;
     gap: 2rem;
 }
 
@@ -73,18 +72,23 @@
 
     .main {
         position: relative;
+        overflow: hidden;
+        z-index: 0;
     }
 
     .main::before {
         content: "";
-        position: absolute;
+        position: fixed;
         inset: 0;
-
         background: url("/public/images/mini_logo.svg") center/250px no-repeat;
-
         opacity: 0.2;
+        z-index: -1;
+        pointer-events: none;
+    }
 
-        z-index: 0;
+    .main>* {
+        position: relative;
+        z-index: 1;
     }
 }
 

@@ -62,9 +62,6 @@
 }
 
 .hamburger {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     position: relative;
     height: 18px;
     display: none;
@@ -85,6 +82,7 @@
 }
 
 .hamburger span:nth-child(2) {
+    top: 42%;
     width: 20px;
 }
 
@@ -98,8 +96,7 @@
 }
 
 .hamburger.active span:nth-child(2) {
-    opacity: 0;
-    width: 0;
+    display: none;
 }
 
 .hamburger.active span:nth-child(3) {
