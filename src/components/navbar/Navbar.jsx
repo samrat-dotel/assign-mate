@@ -1,19 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const navigate = useNavigate();
 
+  const handleNavigate = (path) => {
+    navigate(path);
+    setIsOpen(false);
+  };
+
   const gotoHome = () => navigate("/");
 
-  const gotoAbout = () => navigate("/about");
-
-  const gotoContact = () => navigate("/contact");
-
-  const gotoLogin = () => navigate("/login");
-
-  const gotoSignup = () => navigate("/signup");
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <main className={styles.main}>
@@ -24,20 +23,39 @@ const Navbar = () => {
         onClick={gotoHome}
       />
 
-      <buttons className={styles.buttons}>
-        <p className={styles.pageButton} onClick={gotoAbout}>
+      <div
+        className={`${styles.hamburger} ${isOpen ? styles.active : ""}`}
+        onClick={() => setIsOpen((prev) => !prev)}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div className={`${styles.buttons} ${isOpen ? styles.active : ""}`}>
+        <p
+          className={styles.pageButton}
+          onClick={() => handleNavigate("/about")}
+        >
           About Us
         </p>
-        <p className={styles.pageButton} onClick={gotoContact}>
+        <p
+          className={styles.pageButton}
+          onClick={() => handleNavigate("/contact")}
+        >
           Contact
         </p>
-        <button className={styles.login} onClick={gotoLogin}>
+
+        <p className={styles.login} onClick={() => handleNavigate("/login")}>
           Login
-        </button>
-        <button className={styles.register} onClick={gotoSignup}>
+        </p>
+        <p
+          className={styles.register}
+          onClick={() => handleNavigate("/signup")}
+        >
           Signup
-        </button>
-      </buttons>
+        </p>
+      </div>
     </main>
   );
 };

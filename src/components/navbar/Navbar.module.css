@@ -1,10 +1,11 @@
 .main {
     box-shadow: .5em .5em rgb(232, 231, 231);
-    padding: 0 5rem;
+    padding: 0 2rem;
     display: flex;
     background-color: whitesmoke;
     justify-content: space-between;
     margin-bottom: 2rem;
+    position: relative;
 }
 
 .image {
@@ -39,23 +40,136 @@
 }
 
 .login {
-    background-color: #0d2640;
+    background-color: var(--color-primary);
     color: white;
-    border: 2px solid #0d2640;
+    border: 2px solid var(--color-primary);
 }
 
 .login:hover {
-    color: #0d2640;
+    color: var(--color-primary);
     background-color: white;
 }
 
 .register {
-    color: #3271ff;
-    border: 2px solid #3271ff;
+    color: var(--color-secondary);
+    border: 2px solid var(--color-secondary);
 }
 
 .register:hover {
     border: 2px solid whitesmoke;
-    background-color: #3271ff;
+    background-color: var(--color-secondary);
     color: whitesmoke;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height: 18px;
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: var(--color-foreground);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.hamburger span:nth-child(1) {
+    top: 0;
+}
+
+.hamburger span:nth-child(2) {
+    width: 20px;
+}
+
+.hamburger span:nth-child(3) {
+    bottom: 0;
+}
+
+.hamburger.active span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+    width: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+}
+
+@media (max-width: 1024px) {
+    .image {
+        width: 20rem;
+    }
+
+    .pageButton,
+    .login,
+    .register {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+        margin: 40px 20px;
+    }
+
+    .buttons.active {
+        display: flex;
+    }
+
+    .buttons {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: whitesmoke;
+        flex-direction: column;
+        padding: .5rem 1.5rem;
+        gap: 0;
+        display: none;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .image {
+        width: 15rem;
+    }
+
+    .hamburger {
+        margin: 30px 15px;
+    }
+
+    .hamburger span {
+        width: 20px;
+        height: 2px;
+    }
+
+    .hamburger span:nth-child(2) {
+        width: 12px;
+    }
+
+    .pageButton,
+    .login,
+    .register {
+        font-size: .8rem;
+    }
+
+    .login,
+    .register {
+        padding: .3rem .7rem;
+    }
 }

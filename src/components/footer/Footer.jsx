@@ -41,38 +41,40 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className={styles.quickLinks}>
-          <p className={styles.name}>Quick Links</p>
+        <div className={styles.container}>
+          <div className={styles.quickLinks}>
+            <p className={styles.name}>Quick Links</p>
 
-          <buttons className={styles.buttons}>
-            <p className={styles.button} onClick={gotoHome}>
-              Home
-            </p>
-            <p className={styles.button} onClick={gotoAbout}>
-              About
-            </p>
-            <p className={styles.button} onClick={gotoContact}>
-              Contact Us
-            </p>
-          </buttons>
-        </div>
+            <buttons className={styles.buttons}>
+              <p className={styles.button} onClick={gotoHome}>
+                Home
+              </p>
+              <p className={styles.button} onClick={gotoAbout}>
+                About
+              </p>
+              <p className={styles.button} onClick={gotoContact}>
+                Contact Us
+              </p>
+            </buttons>
+          </div>
 
-        <div className={styles.socialMedia}>
-          <p className={styles.name}>Social Media</p>
+          <div className={styles.socialMedia}>
+            <p className={styles.name}>Social Media</p>
 
-          <div className={styles.icons}>
-            <a href="https://facebook.com" target="blank">
-              <FaSquareFacebook className={styles.icon} />
-            </a>
-            <a href="https://instagram.com" target="blank">
-              <FaSquareInstagram className={styles.icon} />
-            </a>
-            <a href="https://x.com" target="blank">
-              <FaSquareXTwitter className={styles.icon} />
-            </a>
-            <a href="https://tiktok.com" target="blank">
-              <AiFillTikTok className={styles.icon} />
-            </a>
+            <div className={styles.icons}>
+              <a href="https://facebook.com" target="blank">
+                <FaSquareFacebook className={styles.icon} />
+              </a>
+              <a href="https://instagram.com" target="blank">
+                <FaSquareInstagram className={styles.icon} />
+              </a>
+              <a href="https://x.com" target="blank">
+                <FaSquareXTwitter className={styles.icon} />
+              </a>
+              <a href="https://tiktok.com" target="blank">
+                <AiFillTikTok className={styles.icon} />
+              </a>
+            </div>
           </div>
         </div>
       </div>
