@@ -45,7 +45,7 @@ const Footer = () => {
           <div className={styles.quickLinks}>
             <p className={styles.name}>Quick Links</p>
 
-            <buttons className={styles.buttons}>
+            <div className={styles.buttons}>
               <p className={styles.button} onClick={gotoHome}>
                 Home
               </p>
@@ -55,7 +55,7 @@ const Footer = () => {
               <p className={styles.button} onClick={gotoContact}>
                 Contact Us
               </p>
-            </buttons>
+            </div>
           </div>
 
           <div className={styles.socialMedia}>
