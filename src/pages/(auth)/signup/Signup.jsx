@@ -168,7 +168,7 @@ const Signup = () => {
 
       {error && <p className={styles.error}>{error}</p>}
 
-      <p>
+      <p className={styles.text}>
         Already have an account? <a href="/login">Log in</a>
       </p>
     </main>

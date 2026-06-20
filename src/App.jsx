@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./pages/(auth)/login/Login";
 import Signup from "./pages/(auth)/signup/Signup";
@@ -11,8 +11,19 @@ import AuthLayout from "./layouts/AuthLayout";
 import MainLayout from "./layouts/MainLayout";
 
 const App = () => {
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add("dark-mode");
+    } else {
+      document.documentElement.classList.remove("dark-mode");
+    }
+  }, [darkMode]);
+
   return (
     <div>
+      <button onClick={() => setDarkMode(!darkMode)}>Toggle Theme</button>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainLayout />}>

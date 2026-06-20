@@ -4,13 +4,14 @@
     align-items: center;
     justify-content: center;
     padding: 3rem 5rem;
-    background: linear-gradient(#FFFFFF, #e5e7f5, #FFFFFF);
+    background: linear-gradient(var(--color-bg1), var(--color-bg2), var(--color-bg1));
     height: 90vh;
 }
 
 .title {
     display: flex;
     flex-direction: column;
+    color: var(--color-text);
     align-items: center;
     justify-content: center;
 }
@@ -21,7 +22,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: rgb(255, 252, 252);
+    background: var(--color-bg);
     border: 1px solid #D9E3F480;
     padding: 3rem 2rem;
     border-radius: 1.5rem;
@@ -33,6 +34,7 @@
     line-height: .1rem;
     font-weight: bold;
     font-size: 1rem;
+    color: var(--color-text);
 }
 
 .passwordWrapper {
@@ -68,7 +70,7 @@
 .input,
 .button {
     border: 1px solid #9ca2ad80;
-    background-color: white;
+    color: var(--color-text);
     padding: 1rem;
     font-size: 1.1rem;
     margin-bottom: .5rem;
@@ -77,7 +79,12 @@
 }
 
 .input {
-    max-width: 365px
+    max-width: 365px;
+    background-color: var(--color-bg);
+}
+
+.button {
+    background-color: var(--color-primary);
 }
 
 .input:focus {
@@ -120,6 +127,7 @@
     justify-content: center;
     gap: 2rem;
     width: 100%;
+    color: var(--color-text);
 }
 
 .icon {
@@ -127,7 +135,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #D9E3F4;
+    border: 1px solid #9ca2ad80;
     border-radius: 2rem;
     font-size: 1rem;
     gap: 1rem;
@@ -141,4 +149,8 @@ a {
 
 .error {
     color: var(--color-danger);
+}
+
+.text {
+    color: var(--color-text);
 }

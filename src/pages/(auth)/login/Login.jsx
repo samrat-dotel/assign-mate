@@ -132,7 +132,7 @@ const Login = () => {
 
       {error && <p className={styles.error}>{error}</p>}
 
-      <p>
+      <p className={styles.text}>
         {" "}
         New here? <a href="/register"> Join the group </a>
       </p>

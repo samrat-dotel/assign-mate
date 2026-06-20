@@ -16,8 +16,26 @@ code {
   --color-primary: #4648D4;
   --color-secondary: #0D2640;
   --color-fields: #e5eaf3;
+  --color-text: black;
   --color-bg: whitesmoke;
   --color-foreground: #121C28;
-  --color-danger: #93000A;
+  --color-danger: #d31623;
   --color-success: #00C16A;
+
+  --color-bg1: #FFFFFF;
+  --color-bg2: #e5e7f5;
+}
+
+:root.dark-mode {
+  --color-primary: #dea21f;
+  --color-secondary: #e16d58;
+  --color-fields: #141F0C;
+  --color-text: white;
+  --color-bg: #0A0A0A;
+  --color-foreground: #EDE5D0;
+  --color-danger: #d31623;
+  --color-success: #00C16A;
+
+  --color-bg1: #181616;
+  --color-bg2: #060825;
 }

@@ -2,7 +2,8 @@
     box-shadow: .5em .5em rgb(232, 231, 231);
     padding: 0 2rem;
     display: flex;
-    background-color: whitesmoke;
+    background-color: var(--color-bg);
+    color: var(--color-text);
     justify-content: space-between;
     margin-bottom: 2rem;
     position: relative;
@@ -12,6 +13,12 @@
     width: 25rem;
     height: auto;
     cursor: pointer;
+}
+
+.toggleButton {
+    color: var(--color-text);
+    border: none;
+    background-color: var(--color-bg);
 }
 
 .buttons {
