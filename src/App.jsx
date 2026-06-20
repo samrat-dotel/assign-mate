@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./pages/login/Login";
-import Signup from "./pages/signup/Signup";
+import Login from "./pages/(auth)/login/Login";
+import Signup from "./pages/(auth)/signup/Signup";
 import Dashboard from "./pages/dashboard/Dashboard";
-import ForgetPassword from "./pages/forget-password/ForgetPassword";
-import About from "./pages/about/About";
-import Contact from "./pages/contact/Contact";
-import Home from "./pages/home/Home";
+import ForgetPassword from "./pages/(auth)/forget-password/ForgetPassword";
+import About from "./pages/(general)/about/About";
+import Contact from "./pages/(general)/contact/Contact";
+import Home from "./pages/(general)/home/Home";
 import AuthLayout from "./layouts/AuthLayout";
 import MainLayout from "./layouts/MainLayout";
 

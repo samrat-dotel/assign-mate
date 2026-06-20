@@ -21,12 +21,6 @@ const Footer = () => {
     <main className={styles.hero}>
       <div className={styles.main}>
         <div className={styles.description}>
-          <img
-            src="./images/mini_logo.svg"
-            alt="_blank"
-            className={styles.image}
-          />
-
           <div className={styles.text}>
             <p className={styles.text}>
               AssignMate is a simple assignment management platform that helps

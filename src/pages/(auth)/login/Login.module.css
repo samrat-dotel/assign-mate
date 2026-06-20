@@ -34,6 +34,36 @@
     font-size: 1rem;
 }
 
+.passwordWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.eyeIcon {
+    position: absolute;
+    right: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #666;
+}
+
+.passwordWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.eyeIcon {
+    position: absolute;
+    right: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #666;
+}
+
 .input,
 .button {
     border: 1px solid #9ca2ad80;
@@ -90,4 +120,8 @@
 a {
     text-decoration: none;
     color: var(--color-primary);
+}
+
+.error {
+    color: var(--color-danger);
 }
