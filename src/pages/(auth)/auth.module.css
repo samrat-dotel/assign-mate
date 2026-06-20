@@ -5,6 +5,7 @@
     justify-content: center;
     padding: 3rem 5rem;
     background: linear-gradient(#FFFFFF, #e5e7f5, #FFFFFF);
+    height: 90vh;
 }
 
 .title {
@@ -75,9 +76,24 @@
     width: 100%;
 }
 
+.input {
+    max-width: 365px
+}
+
 .input:focus {
     outline: none;
     border-color: var(--color-primary);
+}
+
+.passwords {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.passwordField {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .button {

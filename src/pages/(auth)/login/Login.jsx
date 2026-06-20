@@ -53,13 +53,15 @@ const Login = () => {
 
     setLoading(true);
 
-    navigate("/");
+    setTimeout(() => {
+      navigate("/");
+    }, 2000);
   };
 
   return (
     <main className={styles.main}>
       <div className={styles.title}>
-        <h1 style={{ fontSize: "32px", lineHeight: "3px" }}>
+        <h1 style={{ fontSize: "3rem", lineHeight: "3px" }}>
           {" "}
           Hey, what's due today? 👀
         </h1>
