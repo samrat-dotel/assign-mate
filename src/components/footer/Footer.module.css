@@ -78,7 +78,7 @@
 
     .main::before {
         content: "";
-        position: fixed;
+        position: absolute;
         inset: 0;
         background: url("/public/images/mini_logo.svg") center/250px no-repeat;
         opacity: 0.2;

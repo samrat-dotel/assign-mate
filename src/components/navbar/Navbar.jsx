@@ -51,7 +51,7 @@ const Navbar = () => {
         </p>
         <p
           className={styles.register}
-          onClick={() => handleNavigate("/signup")}
+          onClick={() => handleNavigate("/register")}
         >
           Signup
         </p>
