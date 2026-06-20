@@ -14,6 +14,8 @@ const App = () => {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
+    localStorage.setItem("theme", darkMode ? "dark" : "light");
+
     if (darkMode) {
       document.documentElement.classList.add("dark-mode");
     } else {
@@ -23,11 +25,13 @@ const App = () => {
 
   return (
     <div>
-      <button onClick={() => setDarkMode(!darkMode)}>Toggle Theme</button>
+      <button onClick={() => setDarkMode(!darkMode)}>
+        {darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
+      </button>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainLayout />}>
-            <Route path="/" element={<Home />} />
+            <Route index element={<Home />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />

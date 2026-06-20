@@ -70,7 +70,6 @@
 .input,
 .button {
     border: 1px solid #9ca2ad80;
-    color: var(--color-text);
     padding: 1rem;
     font-size: 1.1rem;
     margin-bottom: .5rem;
@@ -81,10 +80,19 @@
 .input {
     max-width: 365px;
     background-color: var(--color-bg);
+    color: var(--color-text);
 }
 
 .button {
     background-color: var(--color-primary);
+    font-weight: bold;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: white;
+}
+
+.button:hover {
+    transform: translateY(-1px);
 }
 
 .input:focus {
@@ -101,19 +109,6 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-}
-
-.button {
-    color: var(--color-primary);
-    font-size: 1.3rem;
-    background-color: var(--color-bg);
-    font-weight: bold;
-    margin-bottom: 0;
-    cursor: pointer;
-}
-
-.button:hover {
-    transform: translateY(-1px);
 }
 
 .divider {
@@ -137,7 +132,7 @@
     justify-content: center;
     border: 1px solid #9ca2ad80;
     border-radius: 2rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     gap: 1rem;
     cursor: pointer;
 }

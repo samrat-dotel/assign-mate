@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import styles from "../auth.module.css";
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebook, FaEye, FaEyeSlash } from "react-icons/fa";
@@ -88,9 +88,9 @@ const Login = () => {
           }}
         >
           <label className={styles.label}>Password</label>
-          <a className={styles.link} href="/forgetPassword">
+          <Link className={styles.link} to="/forgetPassword">
             Forgot password?
-          </a>
+          </Link>
         </div>
 
         <div className={styles.passwordWrapper}>
@@ -134,7 +134,7 @@ const Login = () => {
 
       <p className={styles.text}>
         {" "}
-        New here? <a href="/register"> Join the group </a>
+        New here? <Link to="/register"> Join the group </Link>
       </p>
     </main>
   );
