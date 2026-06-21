@@ -172,10 +172,14 @@ a {
 
     .link,
     .label,
-    .button,
     .input,
-    .icon {
+    .icon,
+    .divider {
         font-size: .7rem;
+    }
+
+    .button {
+        font-size: .8rem;
     }
 
     .input {
