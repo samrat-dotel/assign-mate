@@ -149,6 +149,8 @@ const Signup = () => {
           {loading ? "Creating account..." : "Create Account"}
         </button>
 
+        {error && <p className={styles.error}>{error}</p>}
+
         <div className={styles.divider}>or Sign up with</div>
 
         <div className={styles.media}>
@@ -163,8 +165,6 @@ const Signup = () => {
           </div>
         </div>
       </form>
-
-      {error && <p className={styles.error}>{error}</p>}
 
       <p className={styles.text}>
         Already have an account? <Link to="/login">Log in</Link>

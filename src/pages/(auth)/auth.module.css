@@ -63,17 +63,17 @@
 .input,
 .button {
     border: 1px solid #9ca2ad80;
+    box-sizing: border-box;
     padding: 1rem;
     font-size: 1.1rem;
     margin-bottom: .5rem;
     border-radius: 1rem;
-    width: 100%;
 }
 
 .input {
-    max-width: 365px;
     background-color: var(--color-bg);
     color: var(--color-text);
+    width: 100%;
 }
 
 .button {
@@ -138,6 +138,7 @@ a {
 
 .error {
     color: var(--color-danger);
+    text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -155,6 +156,7 @@ a {
         font-size: 1.5rem;
     }
 
+    .error,
     .text {
         font-size: .8rem;
     }
@@ -174,6 +176,14 @@ a {
     .input,
     .icon {
         font-size: .7rem;
+    }
+
+    .input {
+        padding: 1rem .8rem;
+    }
+
+    .passwords {
+        gap: 1rem;
     }
 
     .media {

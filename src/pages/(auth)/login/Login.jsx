@@ -72,7 +72,6 @@ const Login = () => {
           type="email"
           placeholder="you@gmail.com"
           className={styles.input}
-          style={{ maxWidth: "365px" }}
           id="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -112,6 +111,8 @@ const Login = () => {
           {loading ? "Logging in....." : "Jump in"}{" "}
         </button>
 
+        {error && <p className={styles.error}>{error}</p>}
+
         <div className={styles.divider}>or Login with</div>
 
         <div className={styles.media} onClick={null}>
@@ -126,8 +127,6 @@ const Login = () => {
           </div>
         </div>
       </form>
-
-      {error && <p className={styles.error}>{error}</p>}
 
       <p className={styles.text}>
         {" "}
