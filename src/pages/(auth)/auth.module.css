@@ -3,17 +3,25 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 3rem 5rem;
     background: linear-gradient(var(--color-bg1), var(--color-bg2), var(--color-bg1));
-    height: 90vh;
+    padding-top: 2rem;
+    margin: 2rem 0;
 }
 
 .title {
-    display: flex;
-    flex-direction: column;
     color: var(--color-text);
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+}
+
+.header {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.text {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--color-text);
 }
 
 .form {
@@ -99,6 +107,7 @@
 .divider {
     text-align: center;
     font-weight: lighter;
+    color: var(--color-text);
 }
 
 .media {
@@ -131,6 +140,47 @@ a {
     color: var(--color-danger);
 }
 
-.text {
-    color: var(--color-text);
+@media (max-width: 768px) {
+    .header {
+        font-size: 2rem;
+    }
+
+    .text {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .header {
+        font-size: 1.5rem;
+    }
+
+    .text {
+        font-size: .8rem;
+    }
+
+    .form {
+        width: 15rem;
+        padding: 2rem 1.5rem;
+        border-radius: 1.5rem;
+        margin: 2rem;
+        gap: 1rem;
+        width: 70%;
+    }
+
+    .link,
+    .label,
+    .button,
+    .input,
+    .icon {
+        font-size: .7rem;
+    }
+
+    .media {
+        gap: .5rem;
+    }
+
+    .icon {
+        gap: .5rem;
+    }
 }

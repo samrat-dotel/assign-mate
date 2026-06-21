@@ -61,12 +61,9 @@ const Login = () => {
   return (
     <main className={styles.main}>
       <div className={styles.title}>
-        <h1 style={{ fontSize: "3rem", lineHeight: "3px" }}>
-          {" "}
-          Hey, what's due today? 👀
-        </h1>
+        <h1 className={styles.header}> Hey, what's due today? 👀</h1>
 
-        <p style={{ lineHeight: "1px" }}> Don't forget your assignments </p>
+        <p className={styles.text}> Don't forget your assignments </p>
       </div>
 
       <form className={styles.form} onSubmit={handleSubmit}>

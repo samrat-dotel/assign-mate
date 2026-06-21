@@ -80,10 +80,8 @@ const Signup = () => {
   return (
     <main className={styles.main}>
       <div className={styles.title}>
-        <h1 style={{ fontSize: "3rem", lineHeight: "3px" }}>
-          Join AssignMate 🚀
-        </h1>
-        <p style={{ lineHeight: "1px" }}>
+        <h1 className={styles.header}>Join AssignMate 🚀</h1>
+        <p className={styles.text}>
           Your digital living room for getting things done
         </p>
       </div>
