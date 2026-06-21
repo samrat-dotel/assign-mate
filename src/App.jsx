@@ -24,8 +24,21 @@ const App = () => {
   }, [darkMode]);
 
   return (
-    <div>
-      <button onClick={() => setDarkMode(!darkMode)}>
+    <div
+      style={{
+        backgroundColor: "var(--color-bg1)",
+      }}
+    >
+      <button
+        onClick={() => setDarkMode(!darkMode)}
+        style={{
+          color: "var(--color-text)",
+          backgroundColor: "var(--color-bg",
+          borderColor: "var(--color-border)",
+          padding: ".2rem",
+          margin: ".2rem",
+        }}
+      >
         {darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
       </button>
       <BrowserRouter>

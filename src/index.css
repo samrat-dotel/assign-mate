@@ -21,7 +21,9 @@ code {
   --color-foreground: #121C28;
   --color-danger: #d31623;
   --color-success: #00C16A;
+  --color-border: #9ca2ad80;
 
+  --color-nav-shadow: rgb(232, 231, 231);
   --color-bg1: #FFFFFF;
   --color-bg2: #e5e7f5;
 }
@@ -35,7 +37,9 @@ code {
   --color-foreground: #EDE5D0;
   --color-danger: #d31623;
   --color-success: #00C16A;
+  --color-border: #9ca2ad80;
 
+  --color-nav-shadow: rgb(23, 24, 24);
   --color-bg1: #181616;
   --color-bg2: #060825;
 }

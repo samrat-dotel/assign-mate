@@ -23,7 +23,7 @@
     flex-direction: column;
     justify-content: center;
     background: var(--color-bg);
-    border: 1px solid #D9E3F480;
+    border: 1px solid var(--color-border);
     padding: 3rem 2rem;
     border-radius: 1.5rem;
     margin: 2rem;
@@ -49,22 +49,7 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    color: #666;
-}
-
-.passwordWrapper {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.eyeIcon {
-    position: absolute;
-    right: 12px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    color: #666;
+    color: var(--color-border);
 }
 
 .input,
@@ -88,7 +73,7 @@
     font-weight: bold;
     font-size: 1.3rem;
     cursor: pointer;
-    color: white;
+    color: var(--color-bg);
 }
 
 .button:hover {
@@ -130,7 +115,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #9ca2ad80;
+    border: 1px solid var(--color-border);
     border-radius: 2rem;
     font-size: 1.2rem;
     gap: 1rem;

@@ -1,5 +1,5 @@
 .main {
-    box-shadow: .5em .5em rgb(232, 231, 231);
+    box-shadow: .5em .5em var(--color-nav-shadow);
     padding: 0 2rem;
     display: flex;
     background-color: var(--color-bg);
@@ -13,12 +13,6 @@
     width: 25rem;
     height: auto;
     cursor: pointer;
-}
-
-.toggleButton {
-    color: var(--color-text);
-    border: none;
-    background-color: var(--color-bg);
 }
 
 .buttons {
@@ -137,7 +131,7 @@
         position: absolute;
         top: 100%;
         right: 0;
-        background: whitesmoke;
+        background: var(--color-bg);
         flex-direction: column;
         padding: .5rem 1.5rem;
         gap: 0;
