@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Login from "./pages/(auth)/login/Login";
 import Signup from "./pages/(auth)/signup/Signup";
 import Dashboard from "./pages/dashboard/Dashboard";
@@ -41,24 +41,22 @@ const App = () => {
       >
         {darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
       </button>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<MainLayout />}>
-            <Route index element={<Home />} />
-            <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-          </Route>
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<Home />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Route>
 
-          <Route path="/" element={<AuthLayout />}>
-            <Route path="/login" element={<Login />} />
+        <Route path="/" element={<AuthLayout />}>
+          <Route path="/login" element={<Login />} />
 
-            <Route path="/register" element={<Signup />} />
+          <Route path="/register" element={<Signup />} />
 
-            <Route path="/forgetpassword" element={<ForgetPassword />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+          <Route path="/forgetpassword" element={<ForgetPassword />} />
+        </Route>
+      </Routes>
     </div>
   );
 };
