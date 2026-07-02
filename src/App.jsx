@@ -9,6 +9,8 @@ import Contact from "./pages/(general)/contact/Contact";
 import Home from "./pages/(general)/home/Home";
 import AuthLayout from "./layouts/AuthLayout";
 import MainLayout from "./layouts/MainLayout";
+import { MdDarkMode, MdOutlineDarkMode } from "react-icons/md";
+import "./App.css";
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -29,17 +31,8 @@ const App = () => {
         backgroundColor: "var(--color-bg1)",
       }}
     >
-      <button
-        onClick={() => setDarkMode(!darkMode)}
-        style={{
-          color: "var(--color-text)",
-          backgroundColor: "var(--color-bg",
-          borderColor: "var(--color-border)",
-          padding: ".2rem",
-          margin: ".2rem",
-        }}
-      >
-        {darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
+      <button onClick={() => setDarkMode(!darkMode)} className="darkMode">
+        {darkMode ? <MdOutlineDarkMode /> : <MdDarkMode />}
       </button>
       <Routes>
         <Route path="/" element={<MainLayout />}>

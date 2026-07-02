@@ -100,9 +100,12 @@
         width: 13rem;
     }
 
-    .name,
-    .button {
+    .name {
         font-size: 1rem;
+    }
+
+    .button {
+        font-size: .8rem;
     }
 
     .icon {
